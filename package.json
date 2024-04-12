@@ -5,9 +5,9 @@
   "main": "server.js",
   "scripts": {
     "server": "nodemon backend/server.js",
-    "start": "concurrently \"npm run server\" \"cd frontend && npm run dev\"",
-
-    "build": "npm i && npm i --prefix frontend"
+    "start": "nodemon backend/server.js",
+  
+    "build": "npm i && npm i --prefix frontend && npm run build --prefix frontend"
   },
   "type": "module",
   "keywords": [],
